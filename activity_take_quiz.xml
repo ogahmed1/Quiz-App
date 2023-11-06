@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".takeQuiz"
+    android:background="#00539f">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18sp"
+        android:text="Testing text"
+        android:textSize="20sp"
+        android:textColor="#eea47f">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/IV"
+        android:layout_width="225sp"
+        android:layout_height="225sp"
+        android:layout_below="@+id/question"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/correctAnswer"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:layout_below="@+id/IV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="#eea47f"/>
+
+    <Button
+        android:id="@+id/wa1"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:layout_below="@+id/IV"
+        android:layout_marginStart="50sp"
+        android:layout_marginLeft="66sp"
+        android:layout_marginTop="30sp"
+        android:layout_toRightOf="@+id/correctAnswer"
+        android:backgroundTint="#eea47f"/>
+    <Button
+        android:id="@+id/wa2"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:layout_below="@+id/correctAnswer"
+        android:layout_marginStart="40sp"
+        android:layout_marginLeft="66sp"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="#eea47f"/>
+
+    <Button
+        android:id="@+id/wa3"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:layout_below="@+id/wa1"
+        android:layout_marginStart="50sp"
+        android:layout_marginLeft="66sp"
+        android:layout_marginTop="20sp"
+        android:layout_toRightOf="@+id/wa2"
+        android:backgroundTint="#eea47f"/>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="85sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/wa3"
+        android:layout_toRightOf="@+id/wa2"
+        android:layout_marginRight="15sp"
+        android:layout_marginStart="98sp"
+        android:layout_marginTop="5sp"
+        android:text="next>"
+        android:backgroundTint="@color/black"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

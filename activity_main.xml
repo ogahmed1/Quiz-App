@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#00539f">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70sp"
+        android:text="QuiZone"
+        android:textColor="#eea47f"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <EditText
+        android:id="@+id/userET"
+        android:layout_width="180sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87sp"
+        android:textColorHint="#eea47f"
+        android:hint="Username"
+        android:textColor="#eea47f" />
+
+    <EditText
+        android:id="@+id/passET"
+        android:layout_width="180sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/userET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:hint="Password"
+        android:textColorHint="#eea47f"
+        android:inputType="textPassword"
+        android:textColor="#eea47f" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:text="Log in"
+        android:textColor="#00539f"
+        android:backgroundTint="#eea47f"
+        />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginLeft="140sp"
+        android:text="Not registered?"
+        android:textColor="#eea47f"
+        android:textSize="20sp">
+
+    </TextView>
+
+
+</RelativeLayout>

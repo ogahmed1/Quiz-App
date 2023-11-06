@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onlineQuiz"
+    android:background="#00539f">
+    <Button
+        android:id="@+id/returnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:backgroundTint="#eea47f"
+        android:textColor="#00539f"
+        android:layout_marginStart="15sp"
+        >
+
+    </Button>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/returnOn"
+        android:layout_marginTop="3sp"
+        android:layout_marginStart="5sp"
+        android:text="Online Quizzes"
+        android:textColor="#eea47f"
+        android:textSize="28sp"
+        >
+
+    </TextView>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:backgroundTint="#eea47f"
+        android:layout_marginStart="15sp"
+        android:layout_toRightOf="@+id/title"
+        android:textColor="#00539f">
+
+    </Button>
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        >
+
+    </ListView>
+
+
+</RelativeLayout>

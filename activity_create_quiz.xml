@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateQuiz"
+    android:background="#00539f">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Quiz Creation"
+        android:textSize="50sp"
+        android:textColor="#eea47f">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="17dp"
+        android:text="What is the name of the quiz"
+        android:textSize="18sp"
+        android:textColor="#eea47f">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:hint="Give it a name"
+        android:textColorHint="#eea47f"
+        android:textColor="#eea47f">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameET"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="How many questions will your quiz have?(1-10)"
+        android:textSize="18sp"
+        android:textColor="#eea47f">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/amountET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:hint="# of questions"
+        android:inputType="number"
+        android:textColorHint="#eea47f"
+        android:textColor="#eea47f">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wa3ET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#eea47f"
+        android:text="Next"
+        android:textColor="#00539f" />
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="17dp"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:textColor="#eea47f">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/questionET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:hint="Question"
+        android:visibility="invisible"
+        android:textColorHint="#eea47f"
+        android:textColor="#eea47f">
+
+    </EditText>
+
+
+
+    <TextView
+        android:id="@+id/correctAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionET"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="24dp"
+        android:text="What is the correct answer?"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:textColor="#eea47f">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/caET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/correctAnswer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:hint="Correct Answer"
+        android:visibility="invisible"
+        android:textColorHint="#eea47f"
+        android:textColor="#eea47f">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/photoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="Add a photo -->"
+        android:visibility="invisible"
+        android:textColor="#eea47f">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/caET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-6dp"
+        android:visibility="invisible">
+
+    </ImageView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="276dp"
+        android:layout_toRightOf="@+id/photoTV"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/add_photo1"
+        android:visibility="invisible"
+        android:backgroundTint="#eea47f"/>
+
+    <TextView
+        android:id="@+id/wrongAnswer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photoTV"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="20dp"
+        android:text="Give three wrong answers"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:textColor="#eea47f">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/wa1ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrongAnswer1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:hint="Wrong Answer 1"
+        android:visibility="invisible"
+        android:textColorHint="#eea47f"
+        android:textColor="#eea47f">
+
+    </EditText>
+    <EditText
+        android:id="@+id/wa2ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wa1ET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:hint="Wrong Answer 2"
+        android:visibility="invisible"
+        android:textColorHint="#eea47f"
+        android:textColor="#eea47f">
+
+    </EditText>
+    <EditText
+        android:id="@+id/wa3ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wa2ET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:hint="Wrong Answer 3"
+        android:visibility="invisible"
+        android:textColorHint="#eea47f"
+        android:textColor="#eea47f">
+
+    </EditText>
+
+
+
+</RelativeLayout>
